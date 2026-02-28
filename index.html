@@ -292,7 +292,7 @@
     </section>
 
     <!-- CALL TO ACTION -->
-     <section id="contact" class="py-32 bg-white">
+      <section id="contact" class="py-32 bg-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-12">
             <div class="bg-blue-600 p-12 lg:p-20 rounded-[4rem] text-white text-center shadow-3xl relative overflow-hidden">
                 <h2 class="text-4xl lg:text-6xl mb-8">Collaborate with StepWise</h2>
@@ -300,38 +300,34 @@
                     We are currently seeking venture partners and clinical institutions to help scale this life-saving technology across the region.
                 </p>
                 
-                <!-- Initial Choice Buttons -->
                 <div id="cta-buttons" class="flex flex-col sm:flex-row justify-center gap-6 mt-12 transition-all duration-300">
                     <button onclick="showContactForm('Investor Portal Inquiry')" class="bg-white text-blue-600 px-10 py-4 rounded-sm font-bold shadow-xl hover:bg-blue-50 transition">Investor Portal</button>
                     <button onclick="showContactForm('Clinical Partnership Inquiry')" class="border border-white/40 px-10 py-4 rounded-sm font-bold hover:bg-white/10 transition">Clinical Partnership</button>
                 </div>
 
-                <!-- HIDDEN CONTACT FORM BOX -->
                 <div id="contact-box" class="mt-12 max-w-lg mx-auto bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 text-left relative">
-                    <!-- Close Button -->
-                    <button type="button" onclick="hideContactForm()" class="absolute top-4 right-4 text-white/60 hover:text-white" aria-label="Close form">
+                    <button type="button" onclick="hideContactForm()" class="absolute top-4 right-4 text-white/60 hover:text-white">
                         <i class="fa-solid fa-xmark text-xl"></i>
                     </button>
                     
                     <h4 id="form-title" class="text-xl font-bold mb-6 text-white tracking-wide">Inquiry</h4>
                     
-                    <!-- Form with security attributes and linked labels -->
-                    <form action="mailto:areghym@gmail.com" method="post" enctype="text/plain" autocomplete="on" class="space-y-4">
+                    <form action="mailto:areghym@gmail.com" method="post" enctype="text/plain" class="space-y-4">
                         <input type="hidden" name="Subject" id="hidden-subject" value="General Inquiry">
                         
                         <div>
                             <label class="block text-sm font-semibold mb-2 text-blue-100" for="full-name">Full Name</label>
-                            <input type="text" id="full-name" name="name" required autocomplete="name" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/50" placeholder="John Doe">
+                            <input type="text" id="full-name" name="name" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white" placeholder="John Doe">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-semibold mb-2 text-blue-100" for="email-address">Email Address</label>
-                            <input type="email" id="email-address" name="email" required autocomplete="email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/50" placeholder="john@example.com">
+                            <input type="email" id="email-address" name="email" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white" placeholder="john@example.com">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-semibold mb-2 text-blue-100" for="message-body">Message</label>
-                            <textarea id="message-body" name="message" rows="4" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/50" placeholder="Tell us more about your interest..."></textarea>
+                            <textarea id="message-body" name="message" rows="4" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white" placeholder="Tell us more..."></textarea>
                         </div>
                         
                         <button type="submit" class="w-full bg-white text-blue-600 font-bold py-4 rounded-lg hover:bg-blue-50 transition shadow-lg">
@@ -341,6 +337,7 @@
                 </div>
             </div>
         </div>
+    </section>
 
    <!-- FOOTER -->
     <footer class="py-20 border-t border-slate-100">
@@ -361,6 +358,7 @@
 
 </body>
 </html>
+
 
 
 
